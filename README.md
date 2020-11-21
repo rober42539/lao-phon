@@ -7,10 +7,12 @@ Well, you've come to the right place!
 
 ## The Layout
 **Note:** *The Linux layout has the zero width joiner as AltGR+Space. For Windows it is AltGR+Minus. The images below are for Windows.*
-*Layout Pictures to be Added Here*
+![Regular Keys](https://raw.githubusercontent.com/rober42539/lao-phon/main/Phonetic.jpg)
+![Shift Keys](https://raw.githubusercontent.com/rober42539/lao-phon/main/PhoneticShft.jpg)
+![AltGr Keys](https://raw.githubusercontent.com/rober42539/lao-phon/main/PhoneticAltGr.jpg)
 
 ## Windows
-Clone or downlaod the repo, navigate to the Windows folder.
+Clone or [download](https://github.com/rober42539/lao-phon/archive/main.zip) the repo, navigate to the Windows folder.
 
 Run setup.exe.
 
@@ -21,7 +23,7 @@ Add the layout to the Windows 10 onput options. You may need to restart afterwar
 
 **Also, the Linux layout has the zero width joiner as AltGR+Space. For Windows it is AltGR+Minus. The images above are for Windows.**
 
-Clone this repo or download the zip.
+Clone or [download](https://github.com/rober42539/lao-phon/archive/main.zip) the repo.
 
 Navigate to the *la* symbols file in the ./xkb/symbols/ folder of the repo.
 
