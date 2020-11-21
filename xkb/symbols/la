@@ -1,0 +1,202 @@
+// Lao Phonetic keymap, by Robert M Campbell 
+
+partial
+xkb_symbols "phon" {
+    // This keymap describes a latin-like phonetic
+    // keyboard for Lao, which is easier for
+    // non-native speakers to type Lao.
+
+    name[Group1]= "Lao Latin Phonetic";
+
+    key  {[grave, asciitilde, 0x1000ecc]};                // ??
+    key  {[1,     exclam, 0x1000ed1]};                        // ?
+    key  {[2,     at, 0x1000ed2]};                            // ?
+    key  {[3,     numbersign, 0x1000ed3]};                    // ?
+    key  {[4,     0x10020ad, 0x1000ed4, dollar]};                   // ?
+    key  {[5,     percent, 0x1000ed5]};                       // ?
+    key  {[6,     asciicircum, 0x1000ed6]};                   // ?
+    key  {[7,     ampersand, 0x1000ed7]};                     // ?
+    key  {[8,     asterisk, 0x1000ed8]};                      // ?
+    key  {[9,     parenleft, 0x1000ed9]};                     // ?
+    key  {[0,     parenright, 0x1000ed0]};                    // ?
+    key  {[minus, underscore]};                           // Normal
+    key  {[equal, plus]};                                 // Normal
+
+    key  {[0x1000ec3, 0x1000ec4]};                        // ?, ?
+    key  {[0x1000eb6, 0x1000eb7, 0x1000ea7]};                        // ??, ??
+    key  {[0x1000ec0, 0x1000ec1]};                        // ??, ??
+    key  {[0x1000ea3, 0x1000ec6]};                        // ?, ?
+    key  {[0x1000e96, 0x1000e97]};                        // ?, ?
+    key  {[0x1000ea2, 0x1000e8d, 0x1000edf]};             // ?, ?, ?
+    key  {[0x1000eb8, 0x1000eb9]};                        // ??, ??
+    key  {[0x1000eb4, 0x1000eb5]};                        // ??, ??
+    key  {[0x1000ead, 0x1000ec2]};                        // ?, ?
+    key  {[0x1000e9c, 0x1000e9e]};                        // ?, ?
+    key  {[bracketleft, braceleft]};                      // Normal
+    key  {[bracketright, braceright]};                    // Normal
+
+    key  {[0x1000eb0, 0x1000eb2]};                        // ??, ??
+    key  {[0x1000eaa, 0x1000e8a]};                        // ?, ?
+    key  {[0x1000e94, 0x1000e95]};                        // ?, ?
+    key  {[0x1000e9d, 0x1000e9f]};                        // ?, ?
+    key  {[0x1000e81, 0x1000e87, 0x1000ede]};             // ?, ?, ?
+    key  {[0x1000eab, 0x1000eae]};                        // ?, ?
+    key  {[0x1000e88, 0x1000ebd]};                        // ?, ?
+    key  {[0x1000e82, 0x1000e84]};                        // ?, ?
+    key  {[0x1000ea5, 0x1000ebc]};                        // ?, ??
+    key  {[semicolon, colon]};                            // Normal
+    key  {[apostrophe, quotedbl]};                        // Normal
+
+    key  {[0x1000ebb, 0x1000ec8]};                        // ??, Mai Ek
+    key  {[0x1000eb1, 0x1000ec9]};                        // ??, Mai Tho
+    key  {[0x1000ecd, 0x1000eca]};                        // ??, Mai Ti
+    key  {[0x1000eb3, 0x1000ecb]};                        // ???, Mai Jatawa
+    key  {[0x1000e9a, 0x1000e9b, 0x1000e3f]};             // ?, ?, baht
+    key  {[0x1000e99, 0x1000edc]};                        // ?, ?
+    key  {[0x1000ea1, 0x1000edd]};                        // ?, ?
+    key  {[comma, less]};                                 // Normal
+    key  {[period, greater]};                             // Normal
+    key  {[slash, question, 0x1000eaf]};                  // ?
+
+    key  {[backslash, bar]};                              // Normal
+
+    key  {[space, 0x100200b, 0x100200d]};                 //ZWSP, ZW Joiner
+
+    include "level3(ralt_switch)"
+};
+
+// Lao keymap, by Anousak Souphavanh 
+
+default  partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    // This keymap describes the Lao keyboard standard,
+    // which is [kind of] widely used in Laos.
+
+    name[Group1]= "Lao";
+
+    key  { [ 0x100200D                    ]};
+    key  { [ 0x1000ea2,       0x1000ed1   ]};
+    key  { [ 0x1000ea2,       0x1000ed1   ]};
+    key  { [ 0x1000e9f,       0x1000ed2   ]};
+    key  { [ 0x1000ec2,       0x1000ed3   ]};
+    key  { [ 0x1000e96,       0x1000ed4   ]};
+    key  { [ 0x1000eb8,       0x1000ecc   ]};
+    key  { [ 0x1000eb9,       0x1000ebc   ]};
+    key  { [ 0x1000e84,       0x1000ed5   ]};
+    key  { [ 0x1000e95,       0x1000ed6   ]};
+    key  { [ 0x1000e88,       0x1000ed7   ]};
+    key  { [ 0x1000e82,       0x1000ed8   ]};
+    key  { [ 0x1000e8a,       0x1000ed9   ]};
+    key  { [ 0x1000ecd                    ]};
+
+    key  { [ 0x1000ebb                    ]};
+    key  { [ 0x1000ec4,       0x1000ed0   ]};
+    key  { [ 0x1000eb3                    ]};
+    key  { [ 0x1000e9e,       underscore  ]};
+    key  { [ 0x1000eb0,       plus        ]};
+    key  { [ 0x1000eb4                    ]};
+    key  { [ 0x1000eb5                    ]};
+    key  { [ 0x1000ea3,       0x1000eae   ]};
+    key  { [ 0x1000e99                    ]};
+    key  { [ 0x1000e8d,       0x1000ebd   ]};
+    key  { [ 0x1000e9a,       minus       ]};
+    key  { [ 0x1000ea5,       braceright  ]};
+    key  { [ 0x1000edc,       0x1000edd   ]};
+
+    key  { [ 0x1000eb1                    ]};
+    key  { [ 0x1000eab,       semicolon   ]};
+    key  { [ 0x1000e81,       period      ]};
+    key  { [ 0x1000e94,       comma       ]};
+    key  { [ 0x1000ec0,       colon       ]};
+    key  { [ 0x1000ec9,       0x1000eca   ]};
+    key  { [ 0x1000ec8,       0x1000ecb   ]};
+    key  { [ 0x1000eb2,       exclam      ]};
+    key  { [ 0x1000eaa,       question    ]};
+    key  { [ 0x1000ea7,       percent     ]};
+    key  { [ 0x1000e87,       equal       ]};
+
+    key  { [ 0x1000e9c,       0x10020ad   ]};
+    key  { [ 0x1000e9b,       parenleft   ]};
+    key  { [ 0x1000ec1,       0x1000eaf   ]};
+    key  { [ 0x1000ead                    ]};
+    key  { [ 0x1000eb6                    ]};
+    key  { [ 0x1000eb7                    ]};
+    key  { [ 0x1000e97,       0x1000ec6   ]};
+    key  { [ 0x1000ea1,       grave       ]};
+    key  { [ 0x1000ec3,       dollar      ]};
+    key  { [ 0x1000e9d,       parenright  ]};
+};
+
+
+partial
+xkb_symbols "stea" {
+
+    // This keymap describes the proposed Lao keyboard standard by
+    // the PAN Localization Project.
+    // Science Technology and Environment Agency of Lao PDR
+    // National University Computer and Emergency Science of Pakistan
+    // International Development Research Center
+    // Caveat: assigning multiple codepoints to a single key does not
+    // work in XKB.  Therefore the combining codepoint assignments
+    // have been omitted.
+
+    name[Group1]= "Lao (STEA proposed standard layout)";
+
+    key  { [  quotedbl,      apostrophe                   ]};
+    key  { [ 0x1000ea2,               1,       0x1000ed1  ]};
+    key  { [ 0x1000e9f,               2,       0x1000ed2  ]};
+    key  { [ 0x1000ec2,               3,       0x1000ed3  ]};
+    key  { [ 0x1000e96,               4,       0x1000ed4  ]};
+    key  { [ 0x1000eb8,       0x1000ecc,       0x1000ed5  ]};
+    key  { [ 0x1000eb9,       0x1000ebc,       0x1000ed6  ]};
+    key  { [ 0x1000e84,               5,       0x1000ed7  ]};
+    key  { [ 0x1000e95,               6,       0x1000ed8  ]};
+    key  { [ 0x1000e88,               7,       0x1000ed9  ]};
+    key  { [ 0x1000e82,               8,       0x1000ed0  ]};
+    key  { [ 0x1000e8a,               9                   ]};
+    key  { [ 0x1000ecd                                    ]};
+
+    key  { [ 0x1000ebb                                    ]};
+    key  { [ 0x1000ec4,               0                   ]};
+    key  { [ 0x1000eb3,        asterisk                   ]};
+    key  { [ 0x1000e9e,      underscore                   ]};
+    key  { [ 0x1000eb0,            plus                   ]};
+    key  { [ 0x1000eb4                                    ]};
+    key  { [ 0x1000eb5                                    ]};
+    key  { [ 0x1000eae,       0x1000ea3                   ]};
+    key  { [ 0x1000e99,       0x1000edc                   ]};
+    key  { [ 0x1000e8d,       0x1000ebd                   ]};
+    key  { [ 0x1000e9a,           minus                   ]};
+    key  { [ 0x1000ea5                                    ]};
+    key  { [     slash,       backslash                   ]};
+
+    key  { [ 0x1000eb1                    ]};
+    key  { [ 0x1000eab,       semicolon   ]};
+    key  { [ 0x1000e81,          period   ]};
+    key  { [ 0x1000e94,           comma   ]};
+    key  { [ 0x1000ec0,           colon   ]};
+    key  { [ 0x1000ec9,       0x1000eca   ]};
+    key  { [ 0x1000ec8,       0x1000ecb   ]};
+    key  { [ 0x1000eb2,          exclam   ]};
+    key  { [ 0x1000eaa,        question   ]};
+    key  { [ 0x1000ea7,         percent   ]};
+    key  { [ 0x1000e87,           equal   ]};
+
+    key  { [ 0x1000e9c,       0x10020ad   ]};
+    key  { [ 0x1000e9b,       parenleft   ]};
+    key  { [ 0x1000ec1,       0x1000eaf   ]};
+    key  { [ 0x1000ead,               x   ]};
+    key  { [ 0x1000eb6                    ]};
+    key  { [ 0x1000eb7                    ]};
+    key  { [ 0x1000e97,       0x1000ec6   ]};
+    key  { [ 0x1000ea1,       0x1000edd   ]};
+    key  { [ 0x1000ec3,          dollar   ]};
+    key  { [ 0x1000e9d,      parenright   ]};
+
+    key  { [     space,    nobreakspace,    nobreakspace  ]};
+
+    key  { [     comma,          period                   ]};
+
+    include "level3(ralt_switch)"
+};
