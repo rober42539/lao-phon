@@ -7,7 +7,9 @@ Well, you've come to the right place!
 
 ## The Layout
 **Note:** *The Linux layout has the zero width joiner as AltGR+Space. For Windows it is AltGR+Minus. The images below are for Windows.*
-*Layout Pictures to be Added Here*
+![Regular Keys](https://raw.githubusercontent.com/rober42539/lao-phon/main/Phonetic.jpg)
+![Shift Keys](https://raw.githubusercontent.com/rober42539/lao-phon/main/PhoneticShft.jpg)
+![AltGr Keys](https://raw.githubusercontent.com/rober42539/lao-phon/main/PhoneticAltGr.jpg)
 
 ## Windows
 Clone or downlaod the repo, navigate to the Windows folder.
